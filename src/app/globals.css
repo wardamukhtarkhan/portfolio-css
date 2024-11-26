@@ -1,0 +1,420 @@
+
+  /* NAVBAR.CSS HEADER
+  nav {
+    text-align: center;
+    display:flex;
+    padding: 10px;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style-type: none ;
+    margin: 0px;
+    padding: 0px; 
+ }
+nav ul li a {
+    color: white;
+    text-decoration: none;    
+    transition: color 0.3s ease;
+    font-size: 18px;
+    align-items: center;
+}
+nav ul li a:hover{
+    color: yellow;
+    
+}  */
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+nav ul li a {
+ /* color: rgb(12, 9, 48); 
+  text-decoration: none;
+  transition: color 0.3s ease;*/
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: rgb(26, 103, 158);
+  font-size: 20px;
+}
+
+
+/* *{ HOMEPAGE.CSS
+    background-image: url('https://st2.depositphotos.com/3776273/10720/i/380/depositphotos_107206334-stock-photo-abstract-empty-dark-blackabstract-empty.jpg');
+    background-size: cover;
+    color: white;
+  }
+  .image-container{
+    border-radius: 50%;
+    display: flex;
+    margin-top: 20px;
+  }
+  .main-container {
+    display: flex;
+    justify-content:center ;
+    margin-top: 90px;
+    gap: 250px;
+  }
+  .myinfo {
+    padding-left: 20px;
+    margin-top:50px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .container{
+    display: inline-block;
+  }
+  .text {
+    letter-spacing: 5px;
+    font-family: monospace;
+        width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 2s steps(18)
+    cursor .4s step-end infinite alternate;
+  } */
+
+  * {
+   /* background-image: url('');
+    background-color: grey;
+    background-size: cover;*/
+    font-weight: bold;
+    color: #6a0d0d;
+    font-style: oblique;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+  }
+  
+  /* Responsive styling */
+  @media (min-width: 768px) {
+    .main-container {
+      flex-direction: row;
+      justify-content: center;
+      gap: 100px;
+    }
+  }
+  
+  .image-container {
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    filter:drop-shadow(16px 7px 8px #D21369);
+    box-shadow: 4px 4px 20px #6a0d0d;
+  }
+  
+  @media (min-width: 768px) {
+    .image-container {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  .myinfo {
+    text-align: center;
+    font-weight: bold ;
+    font-size: 18px;
+    margin-top: 100px;
+  }
+  
+  @media (min-width: 768px) {
+    .myinfo {
+      text-align: left;
+      font-size: 24px;
+    }
+  }
+  
+  .text {
+    letter-spacing: 4px;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    /* animation: typing 2s steps(18), cursor .4s step-end infinite alternate; */
+  }
+  
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  } 
+  
+
+/* * { ABOUT.CSS
+    background-image: url('https://st2.depositphotos.com/3776273/10720/i/380/depositphotos_107206334-stock-photo-abstract-empty-dark-blackabstract-empty.jpg');
+    background-size: cover;
+}
+.container {
+    background-color: gray;
+    border-radius:20px ;
+}
+.about {
+    text-align: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 30px; 
+    border-width: 10px;
+    margin-top: 150px;
+    display: inline-block;
+    margin-left:400px ;
+}; */
+
+/** {
+  background-image: url('https://st2.depositphotos.com/3776273/10720/i/380/depositphotos_107206334-stock-photo-abstract-empty-dark-blackabstract-empty.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+
+/*.container {
+  background-color: rgba(128, 128, 128, 0.7); /* Slight transparency for background */
+ /* border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 900px;
+  margin: 100px auto; /* Centering container */
+/*}*/
+
+.about {
+  text-align: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 30px;
+  border-width: 10px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background for text area */
+}
+
+.about h1 {
+  font-size: 36px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #6a0d0d;
+  letter-spacing: 2px;
+  animation: slideIn 1s ease-out;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: bold;
+  color: #6a0d0d;
+  font-family: 'Arial', sans-serif;
+  margin: 15px 0;
+}
+
+/* Heading animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .about {
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .about h1 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about h1 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+}
+
+
+/* * {  CONTACT.CSS
+    background-image: url('https://st2.depositphotos.com/3776273/10720/i/380/depositphotos_107206334-stock-photo-abstract-empty-dark-blackabstract-empty.jpg');
+    background-size: cover;
+    }
+    .contact-page {
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 20px;
+        border-width: 10px;
+        margin-top: 150px;
+        margin-left: 550px;
+        justify-content: center;
+        display: inline-block;
+    }
+    .heading {
+        font-size: 30px;
+        font-weight: bold;
+        border-bottom-left-radius: 20px;
+    } */
+
+    * {
+      background-image: url('https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=600');
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 100px auto;
+    }
+    
+    .contact-page {
+      text-align: center;
+      border: 2px solid white;
+      border-radius: 20px;
+      border-width: 10px;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.7); /* Dark background for text */
+      margin-top: 50px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .heading {
+      font-size: 36px;
+      font-weight: bold;
+      color: #6a0d0d;
+      letter-spacing: 2px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-out;
+    }
+    
+    /* Contact info styling */
+    .contact-page p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #6a0d0d;
+      font-family: 'Arial', sans-serif;
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+    
+    /* Heading fade-in animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .container {
+        width: 100%;
+        padding: 20px;
+      }
+    
+      .contact-page {
+        margin-top: 20px;
+        padding: 25px;
+      }
+    
+      .heading {
+        font-size: 28px;
+      }
+    
+      .contact-page p {
+        font-size: 16px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .heading {
+        font-size: 24px;
+      }
+    
+      .contact-page p {
+        font-size: 14px;
+      }
+    }
+    
+
+
+/* *{ GLOBAL.CSS
+  background-color: gray;
+  color: white;
+}
+.image-container{
+  border-radius: 50%;
+  display: flex;
+  margin-top: 20px;
+}
+.main-container {
+  display: flex;
+  justify-content:center ;
+  margin-top: 90px;
+  gap: 250px;
+}
+.myinfo {
+  padding-left: 20px;
+  margin-top:50px;
+  font-weight: bold;
+  font-size: 24px;
+} */
+
